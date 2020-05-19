@@ -39,7 +39,5 @@ H43 - "185.152.71.255",   H61 - "57.79.223.255",    H62 - "41.60.143.2"
 H63 - "41.60.241.255"
  
 TO FIX:
-1. Host nesiunčia pranešimų, todėl panaikinus routerį, prie kurio jis yra prijungtas, Host Routing Table Entry visuose routeriuose išlieka, 
-tačiau norint persiųst packet jis nebus pasiekiamas.
-2. Routeriai dalinasi lentelėmis, bet ne response ir request žinutėmis(pradėta implementuoti packet2.java)
+1. Routeriai dalinasi lentelėmis, bet ne response ir request žinutėmis(pradėta implementuoti packet2.java)
  
