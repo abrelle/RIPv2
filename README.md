@@ -2,20 +2,20 @@
 
 
 Trumpai:
-Kiekvienas routeris, kas 30 sec išsiunčia kaimynams savo routing lentelę. Po 180 sec, negavus kaimyninės lentelės, kelias iki jos interpretuojamas kaip nepasiekiamas.
-Kiekvienas routeris gavęs lentelę, patikrina eilutes, ar rastas trupesnis kelias arba pasižymi negaliojančius.
-Visi nepasiekiami keliai (metric = INFINITY  = 16), įtraukiami prie ištrinamų eilučių ir ištrinami praėjus
-garbage-collection (120) laikui.
-Simuliacijoje laikai trumpesni.
+Kiekvienas routeris, kas 30 sec išsiunčia kaimynams savo routing lentelę. Po 180 sec, negavus kaimyninės lentelės, kelias iki jos interpretuojamas kaip nepasiekiamas.\
+Kiekvienas routeris gavęs lentelę, patikrina eilutes, ar rastas trupesnis kelias arba pasižymi negaliojančius.\
+Visi nepasiekiami keliai (metric = INFINITY  = 16), įtraukiami prie ištrinamų eilučių ir ištrinami praėjus\
+garbage-collection (120) laikui.\
+Simuliacijoje laikai trumpesni.\
 
 
-RIPv2Simulation.java - vykdo programos API
-Network.java - tinklo grafas, keičia tinklo struktūrą
-Router.java - routerio klasė. Broadcastina savo Routing Table.
-Host.java - nodes prijungti prie routeriu
-Link.java - edges tarp routeriu
-RoutingTableEntry.java - Routing Table lentelės eilutė, kurioje saugomi destination addr, subnet mask, next hop addr, metric, flag
-Packet.java - persiunčiamas iš vieno host į kitą. Atspausdina kelią.
+RIPv2Simulation.java - vykdo programos API\
+Network.java - tinklo grafas, keičia tinklo struktūrą\
+Router.java - routerio klasė. Broadcastina savo Routing Table.\
+Host.java - nodes prijungti prie routeriu\
+Link.java - edges tarp routeriu\
+RoutingTableEntry.java - Routing Table lentelės eilutė, kurioje saugomi destination addr, subnet mask, next hop addr, metric, flag\
+Packet.java - persiunčiamas iš vieno host į kitą. Atspausdina kelią.\
 Packet2.java - routerių persiunčiamų žinučių struktūra
 Main.java - paleidžiama programa
 
