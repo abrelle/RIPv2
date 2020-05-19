@@ -131,6 +131,14 @@ public class Router implements Runnable{
 
     void selfUpdate(){
         deleteExpiredRoutes();
+        if(neighbors.isEmpty()){
+            routingTable.clear();
+            routingTable.add(new RoutingTableEntry(this.ipAddr,this.ipAddr,0, this.subnetMask));
+            for(Host h : nodes){
+                routingTable.add((new RoutingTableEntry(h.getIpAddr(),this.ipAddr,1, this.subnetMask)));
+            }
+
+        }
     }
 
 
@@ -374,7 +382,10 @@ public class Router implements Runnable{
             for (RoutingTableEntry e:routingTable) {
                 if(e.get_dest_addr().equals(this.ipAddr)){
                     e.set_metric(INFINITY);
-                    break;
+                }
+                for(Host h : nodes){
+                    if(e.get_dest_addr().equals(h.getIpAddr()))
+                        e.set_metric(INFINITY);
                 }
             }
         }
