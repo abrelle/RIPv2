@@ -1,8 +1,8 @@
 # RIPv2 simulation protocol
 
 
-Trumpai:
-Kiekvienas routeris, kas 30 sec išsiunčia kaimynams savo routing lentelę. Po 180 sec, negavus kaimyninės lentelės, kelias iki jos interpretuojamas kaip nepasiekiamas.\
+Trumpai:\
+Ieškoma trumpiausio kelio grafe/tinkle. Kiekvienas routeris, kas 30 sec išsiunčia kaimynams savo routing lentelę. Po 180 sec, negavus kaimyninės lentelės, kelias iki jos interpretuojamas kaip nepasiekiamas.\
 Kiekvienas routeris gavęs lentelę, patikrina eilutes, ar rastas trupesnis kelias arba pasižymi negaliojančius.\
 Visi nepasiekiami keliai (metric = INFINITY  = 16), įtraukiami prie ištrinamų eilučių ir ištrinami praėjus\
 garbage-collection (120) laikui.\
