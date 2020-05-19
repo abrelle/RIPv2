@@ -16,7 +16,7 @@ Host.java - nodes prijungti prie routeriu\
 Link.java - edges tarp routeriu\
 RoutingTableEntry.java - Routing Table lentelės eilutė, kurioje saugomi destination addr, subnet mask, next hop addr, metric, flag\
 Packet.java - persiunčiamas iš vieno host į kitą. Atspausdina kelią.\
-Packet2.java - routerių persiunčiamų žinučių struktūra
+Packet2.java - routerių persiunčiamų žinučių struktūra\
 Main.java - paleidžiama programa
 
 Kompliuojant visi *.class failai turi būt viename aplanke.
