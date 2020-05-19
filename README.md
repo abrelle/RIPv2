@@ -6,7 +6,7 @@ Kiekvienas routeris, kas 30 sec išsiunčia kaimynams savo routing lentelę. Po 
 Kiekvienas routeris gavęs lentelę, patikrina eilutes, ar rastas trupesnis kelias arba pasižymi negaliojančius.\
 Visi nepasiekiami keliai (metric = INFINITY  = 16), įtraukiami prie ištrinamų eilučių ir ištrinami praėjus\
 garbage-collection (120) laikui.\
-Simuliacijoje laikai trumpesni.\
+Simuliacijoje laikai trumpesni.
 
 
 RIPv2Simulation.java - vykdo programos API\
